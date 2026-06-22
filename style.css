@@ -5,11 +5,17 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Sorts Mill Goudy", serif;
     font-size: 16px;
     background-color: #DAC49D;
 }
+
+
 
 /* --------------------------------------
     HERO SECTION 
@@ -70,6 +76,8 @@ body {
     opacity: 0.6; /* Fades slightly on hover */
 }
 
+
+
 .hero_page_background {
     position: relative;
     top: 0;
@@ -118,8 +126,17 @@ body {
 
 
 
+#education_page_anker{
+    position:relative;
+    height: 0px;
+    top: -5vh;
+}
 
-
+#film_page_anker{
+    position:relative;
+    height: 0px;
+    top: -25vh;
+}
 
 
 
