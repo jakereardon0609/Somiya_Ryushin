@@ -23,7 +23,7 @@ function loadTrack(track) {
     tracks.forEach((t) => t.classList.remove("is-active"));
     track.classList.add("is-active");
 
-    audio.src = track.dataset.src;
+    audio.src = encodeURI(track.dataset.src);
 
     const name = track.querySelector(".track_name").textContent;
     const artist = track.querySelector(".track_artist").textContent;
@@ -105,7 +105,8 @@ function loadTrack(track) {
     }
   });
 
-  loadTrack(player.querySelector(".track.is-active"));
+  const initialTrack = player.querySelector(".track.is-active") || tracks[0];
+  if (initialTrack) loadTrack(initialTrack);
 }
 
 document.querySelectorAll(".player").forEach(initPlayer);
