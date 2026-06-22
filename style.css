@@ -10,9 +10,14 @@ html {
 }
 
 body {
-    font-family: "Sorts Mill Goudy", serif;
+    font-family: "Sawarabi Mincho", "Sorts Mill Goudy", serif;
     font-size: 16px;
     background-color: #DAC49D;
+}
+
+
+.music_page * {
+    font-family: "Sawarabi Mincho", "Sorts Mill Goudy", serif;
 }
 
 
