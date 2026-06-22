@@ -1628,10 +1628,13 @@ body {
 }
 
 .music_video_text_group{
-    padding: 0px 4vw;
+    padding: 0px 3vw;
+    padding-bottom: 20px;
 }
 
-
+.music_video_big_text{
+    padding: 10px;
+}
 
 
 
