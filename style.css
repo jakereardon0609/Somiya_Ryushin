@@ -290,22 +290,22 @@ body {
 .english_text    { grid-area: english_text; }
 
 .technical_petals  { grid-area: technical_petals; }
-.education_page_techinical_skills_header_text   { grid-area: education_page_techinical_skills_header_text; }
+.education_page_technical_skills_header_text   { grid-area: education_page_technical_skills_header_text; }
 
-.education_page_techinical_skill_header{
+.education_page_technical_skill_header{
     display: grid;
     grid-template-columns: clamp(1rem, 2vw, 3.8rem) 1fr;
     grid-template-rows: auto;
     column-gap: 1em;
     grid-template-areas: 
-    "technical_petals education_page_techinical_skills_header_text";
+    "technical_petals education_page_technical_skills_header_text";
     height: 100%;
     width: 100%;
     column-gap: 1em;
     padding-bottom: 20px;   
 }
 
-.education_page_techinical_skills{
+.education_page_technical_skills{
     display: flex;
     z-index: 1;
     flex-direction: column;
@@ -313,7 +313,7 @@ body {
     width: 100%;    
 }
 
-.education_page_techinical_skills_circle{
+.education_page_technical_skills_circle{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
