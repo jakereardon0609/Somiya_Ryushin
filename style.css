@@ -266,7 +266,7 @@ body {
     
 }
 
-@media (max-width: 879px) {
+@media (max-width: 600px) {
     .education_page_green_box {
         width: 100%;
     }
@@ -354,7 +354,7 @@ body {
     padding-bottom: 150px;
 }
 
-@media (max-width:400px){
+@media (max-width:926px){
     .education_page_right{
         min-width: 100%;
     }
@@ -372,7 +372,7 @@ body {
     }
 }
 
-@media (max-width:879px){
+@media (max-width:600px){
     .education_page_location{
         width: 100%;
     }
@@ -490,7 +490,7 @@ body {
     
 }
 
-@media (max-width: 879px) {
+@media (max-width: 600px) {
     .education_page_contact_yellow_box {
         width: 100%;
     }
@@ -498,37 +498,48 @@ body {
 
 .education_page_contact_sitting_me{
     position: absolute;
+    display: flex;
+    justify-content: end;
     z-index: 1;
     bottom: 0;
     height: auto;
-    width: 80%;
-    right : 0;
-    margin-bottom: 70px;
-    align-content: flex-end;
-}
+    width: 100%;
+    height: fit-content;
+    transform: translateY(calc(-250px + 10vw));
+} 
 
-@media (max-width: 879px) {
+
+@media (max-width: 926px) {
     .education_page_contact_sitting_me {
-        width: 100%;
+        flex: 0 0 100%; 
+        transform: translateY(calc(-200px + 10vw));
     }
 }
+
+@media (max-width: 600px) {
+    .education_page_contact_sitting_me {
+        flex: 0 0 100%; 
+        transform: translateY(calc(-150px + 5vw));
+    }
+}
+
 
 .sitting_me{
-    display: block;
     height: auto;
-    justify-self: end;
-    width: 50%;
-}
+    width: 18vw;
+} 
 
-@media (max-width: 879px) {
+@media (max-width: 926px) {
     .sitting_me {
-        width: clamp(200px, 29%, 30%);
+        height: auto;
+        width: calc(18vw + 100px);
     }
 }
 
-@media (max-width: 475px) {
+@media (max-width: 600px) {
     .sitting_me {
-        width: 50%;
+        height: auto;
+        width: calc(25vw + 50px);
     }
 }
 
@@ -1751,7 +1762,7 @@ p, h1, h2, h3, h4, h5, h6{
 
 
 h2{
-    font-size: clamp(2rem, 3vw, 2.5rem);
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
